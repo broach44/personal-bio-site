@@ -27,12 +27,29 @@ const printToDom = (divId, toPrint) => {
 };
 
 //function to loop through the projects array and build domString
-const createProjectCards = () => {
-
+const createProjectCards = (projectsArr) => {
+//Build string of projects
+let domString = `<div class="row">`;
+for (let i = 0; i < projectsArr.length; i++) {
+    const currentProject = projectArr[i];
+    domString += `
+    <div class="project-card col">
+    <h3>${currentProject.title}</h3>
+    <img src="${currentProject.screenshot}">
+    <p>${currentProject.description}</p>
+    <p>${currentProject.technologiesUsed}</p>
+    <p><a href="${currentProject.url}">Click to View - URL</a></p>
+    <p><a href="${currentProject.githubUrl}">Click to View - GitHub</a></p>
+    </div>
+    `;
+}
+domString += `</div>`;
 //add logic to only show the project on the page if it has a value of true in the available property
 
 //print to div called projectsPage
+printToDom('project-list', domString);
+};
 
-}
+createProjectCards(projects);
 
 //Call the createProjectCards(); function in an init function that runs when the project loads.
