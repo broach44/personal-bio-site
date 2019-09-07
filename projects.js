@@ -1,5 +1,3 @@
-
-
 const projects = [
     {
     title: 'Cool Project',
@@ -64,5 +62,84 @@ printToDom('projectsPage', domString);
 
 createProjectCards(projects);
 
+//TODO: Call the createProjectCards(); function in an init function that runs when the project loads.
 
-//Call the createProjectCards(); function in an init function that runs when the project loads.
+document.getElementById('Technologies').addEventListener('click', () => {
+    const selectTechnologies = document.getElementById('technologiesPage');
+    const selectBio = document.getElementById('bioPage');
+    const selectProjects = document.getElementById('projectsPage');
+    if (selectTechnologies.style.display === 'none') {
+        selectTechnologies.style.display = 'block';
+        selectBio.style.display = 'none';
+        selectProjects.style.display = 'none';
+    }   else {
+        selectTechnologies.style.display = 'block';
+        selectBio.style.display = 'none';
+        selectProjects.style.display = 'none';
+    };  
+});
+
+document.getElementById('Bio').addEventListener('click', () => {
+    const selectTechnologies = document.getElementById('technologiesPage');
+    const selectBio = document.getElementById('bioPage');
+    const selectProjects = document.getElementById('projectsPage');
+    if (selectBio.style.display === 'none') {
+        selectTechnologies.style.display = 'none';
+        selectBio.style.display = 'block';
+        selectProjects.style.display = 'none';
+    }   else {
+        selectTechnologies.style.display = 'none';
+        selectBio.style.display = 'block';
+        selectProjects.style.display = 'none';
+    };  
+});
+
+document.getElementById('Projects').addEventListener('click', () => {
+    const selectTechnologies = document.getElementById('technologiesPage');
+    const selectBio = document.getElementById('bioPage');
+    const selectProjects = document.getElementById('projectsPage');
+    if (selectProjects.style.display === 'none') {
+        selectTechnologies.style.display = 'none';
+        selectBio.style.display = 'none';
+        selectProjects.style.display = 'block';
+    }   else {
+        selectTechnologies.style.display = 'none';
+        selectBio.style.display = 'none';
+        selectProjects.style.display = 'block';
+    };  
+});
+
+document.getElementById('Home').addEventListener('click', () => {
+    const selectTechnologies = document.getElementById('technologiesPage');
+    const selectBio = document.getElementById('bioPage');
+    const selectProjects = document.getElementById('projectsPage');
+    if (selectBio.style.display === 'none' || selectTechnologies.style.display === 'none')
+        selectTechnologies.style.display = 'block';
+        selectBio.style.display = 'block';
+        selectProjects.style.display = 'block';
+});
+
+//****BEGIN EVENT LISTENER METHOD ALTERNATIVE */
+// const selectBioPage = () => {
+//     const selectBio = document.getElementById('bioPage');
+//     if (selectBio.style.display === 'none') {
+//         selectBio.style.display = 'block';
+//     }   else {
+//         selectBio.style.display = 'none';
+//     }
+// };
+
+// document.getElementById('Bio').addEventListener('click', selectBioPage);
+
+// ****END METHOD****
+
+// When selecting Technologies link
+// 1. Change Technology section to display
+// 2. Change Bio to none
+// 3. Change projects display to none
+
+
+
+
+
+
