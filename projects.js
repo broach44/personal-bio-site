@@ -1,5 +1,3 @@
-
-
 const projects = [
     {
     title: 'Cool Project',
@@ -64,5 +62,34 @@ printToDom('projectsPage', domString);
 
 createProjectCards(projects);
 
+//TODO: Call the createProjectCards(); function in an init function that runs when the project loads.
 
-//Call the createProjectCards(); function in an init function that runs when the project loads.
+// const buttonClick = (e) => {
+//     const currentLink = e.target.divId;
+// }
+
+
+
+
+
+const selectProjects = document.getElementById('projectsPage');
+selectProjects.style.display = 'none';
+
+document.getElementById('Bio').addEventListener('click', () => {
+    const selectBio = document.getElementById('bioPage');
+    selectBio.style.display = 'block';
+});
+
+document.getElementById('Technologies').addEventListener('click', () => {
+    const selectTechnologies = document.getElementById('technologiesPage');
+    if (selectTechnologies.style.display === 'none') {
+        selectTechnologies.style.display = 'block';
+    }   else {
+        selectTechnologies.style.display = 'none';
+    }
+})
+
+// document.getElementById('Projects').addEventListener('click', () => {
+//     const selectProjects = document.getElementById('projectsPage');
+//     selectProjects.style.display = 'block';
+// })

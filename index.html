@@ -11,35 +11,52 @@
 
 <body>
   <!-- Navigation -->
-  <nav>
-    <h2>Crystal Broach</h2>
-    <ul id="navLinks">
-      <li><a id="navToBio">Bio</a></li>
-      <li><a id="navToTechnologies">Technologies</a></li>
-      <li><a id="navToProjects">Projects</a></li>
-    </ul>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Crystal Broach</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" id="Home" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="Bio" href="#">Bio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="Technologies" href="#">Technologies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="Projects" href="#">Projects</a>
+        </li>
+      </ul>
+    </div>
   </nav>
   <!-- End Navigation -->
 
   <!-- Primary View -->
-  <div class="fullPage" id="bioPage">
-    <!-- TODO: Fill in bio info here: What is your background? Why do you want to go into development? What do you love about development? -->
-    <h4>Background</h4>
-    <p>I currently have been working within private corrections for CoreCivic (previosuly known as Corrections Corporation of America).  I started as a coordinator in Operations Support department, offering support for the financial business operations and safety operations within the company.  I was promoted to oversee the Occupational Safety for all our Community Branch consisting of around 27 facilities and climbing.</p>
-    <h4>Journey into Development</h4>
-    <p>Why development? What do I love? I absolutely love to learn and software development ensures that I will spend the rest of my life continuing to learn new technologies and provide solutions to new problems.  I love the problem solving required in developing and look forward to solving many more problems in the future!</p>
+  <div class="fullPage container">
+    <div class="fullPage" id="bioPage">
+      <!-- TODO: Fill in bio info here: What is your background? Why do you want to go into development? What do you love about development? -->
+      <h4>Background</h4>
+      <p>I currently have been working within private corrections for CoreCivic (previosuly known as Corrections Corporation of America).  I started as a coordinator in Operations Support department, offering support for the financial business operations and safety operations within the company.  I was promoted to oversee the Occupational Safety for all our Community Branch consisting of around 27 facilities and climbing.</p>
+      <h4>Journey into Development</h4>
+      <p>Why development? What do I love? I absolutely love to learn and software development ensures that I will spend the rest of my life continuing to learn new technologies and provide solutions to new problems.  I love the problem solving required in developing and look forward to solving many more problems in the future!</p>
+    </div>
+    <div class="fullPage" id="technologiesPage">
+      <!-- TODO: Start an UL of all of the tools and technologies you've started learning so far. (You'll beef this page up later). -->
+      <ul>
+        <li>HTML 5</li>
+        <li>CSS 3</li>
+        <li>Bootstrap 4</li>
+        <li>Javascript</li>
+        <li>jQuery</li>
+      </ul>
+    </div>
+    <div id="projectsPage"></div>
   </div>
-  <div class="fullPage" id="technologiesPage">
-    <!-- TODO: Start an UL of all of the tools and technologies you've started learning so far. (You'll beef this page up later). -->
-    <ul>
-      <li>HTML 5</li>
-      <li>CSS 3</li>
-      <li>Bootstrap 4</li>
-      <li>Javascript</li>
-      <li>jQuery</li>
-    </ul>
-  </div>
-  <div class="fullPage container" id="projectsPage"></div>
   <!-- End Primary View -->
 
   <!-- Footer -->
