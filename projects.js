@@ -1,5 +1,3 @@
-//TODO: Clean up and refactor event listener functions.
-
 const init = () => {
 
     const projects = [
@@ -64,65 +62,66 @@ const init = () => {
         printToDom('projectsPage', domString);
     };
 
-    const addAllListeners = () => {
-        document.getElementById('Technologies').addEventListener('click', () => {
-            const selectTechnologies = document.getElementById('technologiesPage');
-            const selectBio = document.getElementById('bioPage');
-            const selectProjects = document.getElementById('projectsPage');
-            if (selectTechnologies.style.display === 'none') {
-                selectTechnologies.style.display = 'block';
-                selectBio.style.display = 'none';
-                selectProjects.style.display = 'none';
-            }   else {
-                selectTechnologies.style.display = 'block';
-                selectBio.style.display = 'none';
-                selectProjects.style.display = 'none';
-            };  
-        });
+    const selectTechnologies = document.getElementById('technologiesPage');
+    const selectBio = document.getElementById('bioPage');
+    const selectProjects = document.getElementById('projectsPage');
 
-        document.getElementById('Bio').addEventListener('click', () => {
-            const selectTechnologies = document.getElementById('technologiesPage');
-            const selectBio = document.getElementById('bioPage');
-            const selectProjects = document.getElementById('projectsPage');
-            if (selectBio.style.display === 'none') {
-                selectTechnologies.style.display = 'none';
-                selectBio.style.display = 'block';
-                selectProjects.style.display = 'none';
-            }   else {
-                selectTechnologies.style.display = 'none';
-                selectBio.style.display = 'block';
-                selectProjects.style.display = 'none';
-            };  
-        });
+    const technologyDisplayed = () => {
+        if (selectTechnologies.style.display === 'none') {
+            selectTechnologies.style.display = 'block';
+            selectBio.style.display = 'none';
+            selectProjects.style.display = 'none';
+        }   else {
+            selectTechnologies.style.display = 'block';
+            selectBio.style.display = 'none';
+            selectProjects.style.display = 'none';
+        }; 
+    }
 
-        document.getElementById('Projects').addEventListener('click', () => {
-            const selectTechnologies = document.getElementById('technologiesPage');
-            const selectBio = document.getElementById('bioPage');
-            const selectProjects = document.getElementById('projectsPage');
-            if (selectProjects.style.display === 'none') {
-                selectTechnologies.style.display = 'none';
-                selectBio.style.display = 'none';
-                selectProjects.style.display = 'block';
-            }   else {
-                selectTechnologies.style.display = 'none';
-                selectBio.style.display = 'none';
-                selectProjects.style.display = 'block';
-            };  
-        });
+    const bioDisplayed = () => {
+        if (selectBio.style.display === 'none') {
+            selectTechnologies.style.display = 'none';
+            selectBio.style.display = 'block';
+            selectProjects.style.display = 'none';
+        }   else {
+            selectTechnologies.style.display = 'none';
+            selectBio.style.display = 'block';
+            selectProjects.style.display = 'none';
+        };
+    }
 
-        document.getElementById('Home').addEventListener('click', () => {
-            const selectTechnologies = document.getElementById('technologiesPage');
-            const selectBio = document.getElementById('bioPage');
-            const selectProjects = document.getElementById('projectsPage');
-            if (selectBio.style.display === 'none' || selectTechnologies.style.display === 'none')
-                selectTechnologies.style.display = 'block';
-                selectBio.style.display = 'block';
-                selectProjects.style.display = 'block';
-        });
+    const projectsDisplayed = () => {
+        if (selectProjects.style.display === 'none') {
+            selectTechnologies.style.display = 'none';
+            selectBio.style.display = 'none';
+            selectProjects.style.display = 'block';
+        }   else {
+            selectTechnologies.style.display = 'none';
+            selectBio.style.display = 'none';
+            selectProjects.style.display = 'block';
+        }; 
     };
 
+    const addListeners = () => {
+        document.body.addEventListener('click', (e) => {
+            if (e.target.id == 'Technologies') {
+                technologyDisplayed();
+            } else if (e.target.id == 'Bio') {
+                bioDisplayed();
+            } else if (e.target.id == 'Projects') {
+                projectsDisplayed();
+            } else if (e.target.id == 'Home') {
+                if (selectBio.style.display === 'none' || selectTechnologies.style.display === 'none') {
+                selectTechnologies.style.display = 'block';
+                selectBio.style.display = 'block';
+                selectProjects.style.display = 'block';
+                };
+            };
+        });
+    }
+
     createProjectCards(projects);
-    addAllListeners();
+    addListeners();
 };
 
 init();
