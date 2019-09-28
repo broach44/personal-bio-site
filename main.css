@@ -35,3 +35,7 @@ h4, h3, .navbar-brand {
 #mainDiv {
     min-height: 100%;
 }
+
+.project-card {
+    box-shadow: 5px 5px 5px darkslategray;
+}
