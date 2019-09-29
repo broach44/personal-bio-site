@@ -1,9 +1,25 @@
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Acme', sans-serif; */
+
 body {
     background-color: cadetblue;
     margin: 0px;
     min-height: 100vh;
     width: 100%;
     height: 100vh;
+    font-family: 'Roboto', sans-serif;
+ }
+
+h4, h3, .navbar-brand {
+    font-family: 'Acme', sans-serif;
+}
+
+ a {
+     color: rgb(23, 62, 74);
+ }
+
+ a:hover {
+     color: rgb(47, 5, 115);
  }
 
 #page-container {
@@ -18,4 +34,8 @@ body {
 
 #mainDiv {
     min-height: 100%;
+}
+
+.project-card {
+    box-shadow: 5px 5px 5px darkslategray;
 }
