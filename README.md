@@ -15,11 +15,19 @@ The home page includes all of the content in one space.  Links are provided in t
 
 #### Home View:
 
+![Home View](https://raw.githubusercontent.com/broach44/personal-bio-site/master/screenshots/home-view.PNG)
+
 #### Bio View:
+
+![Bio View](https://raw.githubusercontent.com/broach44/personal-bio-site/master/screenshots/bio-view.PNG)
 
 #### Technologies View:
 
+![Technologies View](https://raw.githubusercontent.com/broach44/personal-bio-site/master/screenshots/technologies-view.PNG)
+
 #### Projects View:
+
+![Project View](https://raw.githubusercontent.com/broach44/personal-bio-site/master/screenshots/project-view.PNG)
 
 ## How to Run
 
