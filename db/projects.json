@@ -1,0 +1,29 @@
+{
+  "project1": {
+    "title": "Temperature Converter",
+    "screenshot": "./images/celsius-to-fahren1.png",
+    "description": "This app converts temperatures in Fahrenheit to Celsius, or will convert temperatures in Celsius to Fahrenheit",
+    "technologiesUsed": "HTML, CSS, Bootstrap, Vanilla JavaScript, Version Control with Github",
+    "available": true,
+    "url": "https://github.com/broach44/js-temp-converter",
+    "githubUrl": "https://github.com/broach44/js-temp-converter"
+  },
+  "project2": {
+  "title": "Temperature Converter",
+  "screenshot": "./images/celsius-to-fahren1.png",
+  "description": "This app converts temperatures in Fahrenheit to Celsius, or will convert temperatures in Celsius to Fahrenheit",
+  "technologiesUsed": "HTML, CSS, Bootstrap, Vanilla JavaScript, Version Control with Github",
+  "available": true,
+  "url": "https://github.com/broach44/js-temp-converter",
+  "githubUrl": "https://github.com/broach44/js-temp-converter"
+  },
+  "project3": {
+  "title": "Temperature Converter",
+  "screenshot": "./images/celsius-to-fahren1.png",
+  "description": "This app converts temperatures in Fahrenheit to Celsius, or will convert temperatures in Celsius to Fahrenheit",
+  "technologiesUsed": "HTML, CSS, Bootstrap, Vanilla JavaScript, Version Control with Github",
+  "available": true,
+  "url": "https://github.com/broach44/js-temp-converter",
+  "githubUrl": "https://github.com/broach44/js-temp-converter"
+  }
+}
