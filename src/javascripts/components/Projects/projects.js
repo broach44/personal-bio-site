@@ -1,46 +1,13 @@
-const init = () => {
-  const projects = [
-    {
-      title: 'Temperature Converter',
-      screenshot: './images/celsius-to-fahren1.png',
-      description: 'This app converts temperatures in Fahrenheit to Celsius, or will convert temperatures in Celsius to Fahrenheit', // A good project description includes 'the what', 'the why', and 'the how'.
-      technologiesUsed: 'HTML, CSS, Bootstrap, Vanilla JavaScript, Version Control with Github',
-      available: true,
-      url: 'https://github.com/broach44/js-temp-converter', // Towards the latter part of the class, you will learn how to host your projects and people will be able to view them live. Cool, right? Welp, until then, just use your GitHub link in this spot as well.
-      githubUrl: 'https://github.com/broach44/js-temp-converter',
-    },
-    {
-      title: 'Cool Project',
-      screenshot: 'https://www.creativeboom.com/uploads/articles/20/20c1c7520534686f227993ac0e58e70fe4b719b8_1100.jpg',
-      description: 'This is the best project', // A good project description includes 'the what', 'the why', and 'the how'.
-      technologiesUsed: 'HTML, CSS, Vanilla JavaScript, Version Control with Github',
-      available: false,
-      url: 'https://github.com/nss-evening-cohort-8/js-part-deux', // Towards the latter part of the class, you will learn how to host your projects and people will be able to view them live. Cool, right? Welp, until then, just use your GitHub link in this spot as well.
-      githubUrl: 'https://github.com/nss-evening-cohort-8/js-part-deux',
-    },
-    {
-      title: 'Cool Project',
-      screenshot: 'https://www.creativeboom.com/uploads/articles/20/20c1c7520534686f227993ac0e58e70fe4b719b8_1100.jpg',
-      description: 'This is the best project', // A good project description includes 'the what', 'the why', and 'the how'.
-      technologiesUsed: 'HTML, CSS, Vanilla JavaScript, Version Control with Github',
-      available: false,
-      url: 'https://github.com/nss-evening-cohort-8/js-part-deux', // Towards the latter part of the class, you will learn how to host your projects and people will be able to view them live. Cool, right? Welp, until then, just use your GitHub link in this spot as well.
-      githubUrl: 'https://github.com/nss-evening-cohort-8/js-part-deux',
-    },
-  ];
+import projectData from '../../helpers/data/projectData';
+import utilities from '../../helpers/utilities';
 
-  const printToDom = (divId, toPrint) => {
-    document.getElementById(divId).innerHTML = toPrint;
-  };
 
-  // function to loop through the projects array and build domString
-  const createProjectCards = (projectsArr) => {
-    // Build string of projects
-    let domString = '<div class="row">';
-    for (let i = 0; i < projectsArr.length; i += 1) {
-      const currentProject = projectsArr[i];
-      if (currentProject.available) {
-        domString += `
+const createProjectCards = (projectsArr) => {
+  let domString = '<div class="row">';
+  for (let i = 0; i < projectsArr.length; i += 1) {
+    const currentProject = projectsArr[i];
+    if (currentProject.available) {
+      domString += `
         <div class="project-card card card-body col-lg-3">
             <h3 class="card-title">${currentProject.title}</h3>
             <img src="${currentProject.screenshot}" class="card-img-top img-fluid">
@@ -52,15 +19,23 @@ const init = () => {
             </div>
         </div>
         `;
-      }
     }
-    domString += '</div>';
-    // add logic to only show the project on the page if it has a value of true in the available property
+  }
+  domString += '</div>';
+  return domString;
+};
 
-    // print to div called projectsPage
-    printToDom('projectsPage', domString);
-  };
 
+const printProjects = () => {
+  projectData.getProjects()
+    .then((projects) => {
+      const projectCards = createProjectCards(projects);
+      utilities.printToDom('projectsPage', projectCards);
+    })
+    .catch((error) => console.error(error));
+};
+
+const init = () => {
   const selectTechnologies = document.getElementById('technologiesPage');
   const selectBio = document.getElementById('bioPage');
   const selectProjects = document.getElementById('projectsPage');
@@ -119,8 +94,8 @@ const init = () => {
     });
   };
 
-  createProjectCards(projects);
+  printProjects();
   addListeners();
 };
 
-export default { init };
+export default { init, printProjects };
