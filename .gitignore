@@ -6,3 +6,4 @@ dist/
 build/
 .firebase/
 node_modules
+src/javascripts/helpers/apiKeys.json
