@@ -10,6 +10,8 @@ The home page includes all of the content in one space.  Links are provided in t
 
 - Dynamically created cards for each project
 - Footer that sticks to the bottom of the page
+- Data driven application that retrieves data from firebase console using Axios
+- ES6 Modules
 
 ## Screenshots
 
@@ -32,9 +34,13 @@ The home page includes all of the content in one space.  Links are provided in t
 ## How to Run
 
 - Clone down this project
-- Install http-server from npm
-- At the root of this project run the following command: `hs -p 8888`
-- In your browser navigate to [https://localhost:8888](https://localhost:8888)
+- Add apiKeys from Firebase formatted identically to the `apiKeysExample.json` file
+- At the root of this project run the following command: `npm start`
+- This should automatically redirect you to the local host, but if not, run `hs -p 8080`, and in your browser, navigate to [https://localhost:8888](https://localhost:8888)
+
+## Firebase Link
+
+Click [**HERE**](https://personal-bio-site-8b42d.web.app/) to go to the application.
 
 ## Contributors
 
