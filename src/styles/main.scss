@@ -1,21 +1,23 @@
-// font-family: 'Raleway', sans-serif;
+// font-family: 'Public Sans', sans-serif;
 // font-family: 'Berkshire Swash', cursive;
 @import "~bootstrap/scss/bootstrap";
 
 
 body {
     background-color: cadetblue;
-    background-image: url(https://images.unsplash.com/photo-1564934304256-db564bb2568d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
-    background-repeat: no-repeat;
+    background: url(https://images.unsplash.com/photo-1564934304256-db564bb2568d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     margin: 0px;
     padding: 0;
     min-height: 100vh;
     width: 100%;
     height: 100vh;
-    font-family: 'Raleway', sans-serif;
-    color: rgb(173, 85, 27);
-    font-size: 20px;
+    font-family: 'Public Sans', sans-serif;
+    color: rgb(252, 103, 5);
+    font-size: 1.5rem;
  }
 
  nav {
@@ -23,17 +25,32 @@ body {
     box-shadow: 5px 5px 5px black;
 }
 
-h4, h3, .navbar-brand {
+h2, h3, .navbar-brand {
     font-family: 'Berkshire Swash', cursive;
     color: white;
 }
 
+.btn-info {
+    background-color: rgb(252, 103, 5);
+    border: none;
+    margin: 5px;
+    width: 8rem;
+    font-size: 1.15rem;
+    &:hover {
+    background-color: rgb(245, 157, 98);   
+    }
+}
+
+.navbar-brand:hover {
+    color: rgb(252, 103, 5);
+}
+
  a {
-     color: rgb(23, 62, 74);
+    color: rgb(245, 157, 98);
  }
 
  a:hover {
-     color: rgb(47, 5, 115);
+    color: rgb(252, 103, 5);
  }
 
 #page-container {
