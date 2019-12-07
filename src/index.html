@@ -5,32 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Crystal Broach - Personal Bio Site</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Acme|Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./main.css">
+  <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Public+Sans:400,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <!-- Navigation -->
   <div class="container d-flex flex-column" id="mainDiv">
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Crystal Broach</a>
+    <nav class="navbar fixed-top navbar-expand-lg">
+      <a class="navbar-brand" href="#"><h1>Crystal Broach</h1></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" id="Home" href="#">Home <span class="sr-only">(current)</span></a>
+            <button class="nav-link btn btn-info" id="Home" href="#">Home <span class="sr-only">(current)</span></button>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id="Bio" href="#">Bio</a>
+            <button class="nav-link btn btn-info" id="Bio" href="#">Bio</button>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id="Technologies" href="#">Technologies</a>
+            <button class="nav-link btn btn-info" id="Technologies" href="#">Technologies</button>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id="Projects" href="#">Projects</a>
+            <button class="nav-link btn btn-info" id="Projects" href="#">Projects</button>
           </li>
         </ul>
       </div>
@@ -41,9 +39,9 @@
   <div id="page-container" class="container">
       <div class="fullPage w-85" id="bioPage">
         <!-- TODO: Fill in bio info here: What is your background? Why do you want to go into development? What do you love about development? -->
-        <h4>Background</h4>
+        <h2>Background</h2>
         <p>I currently have been working within private corrections for CoreCivic (previosuly known as Corrections Corporation of America).  I started as a coordinator in Operations Support department, offering support for the financial business operations and safety operations within the company.  I was promoted to oversee the Occupational Safety for all our Community Branch consisting of around 27 facilities and climbing.</p>
-        <h4>Journey into Development</h4>
+        <h2>Journey into Development</h2>
         <p>Why development? What do I love? I absolutely love to learn and software development ensures that I will spend the rest of my life continuing to learn new technologies and provide solutions to new problems.  I love the problem solving required in developing and look forward to solving many more problems in the future!</p>
       </div>
       <div class="fullPage w-85" id="technologiesPage">
@@ -66,14 +64,14 @@
   
   </div>
    <!-- Footer -->
-  <footer id="footer" class="align-end text-center">
+  <footer id="footer" class="sticky-bottom text-center">
     <!-- TODO: Fill in contact info here: Include things like email, LinkedIn, Twitter and GitHub links. -->
     <!-- <div id="footer" class="position-sticky border border-success"> -->
       <!-- <div class="container mx-auto text-center"> -->
-        <h4>Email: crysland@gmail.com</h4>
-        <h4>LinkedIn:  linkedin.com/in/crystal-broach-2b417023</h4>
-        <h4>Twitter: <a href="https://twitter.com/crystal_1344?lang=en">@crystal_b44</a></h4>
-        <h4>GitHub: <a href="https://github.com/broach44">broach44</a></h4>
+        <h3>Email: <a href="mailto: crysland@gmail.com">crysland@gmail.com</a></h3>
+        <h3>LinkedIn:  <a href="linkedin.com/in/crystal-broach-2b417023">linkedin.com/in/crystal-broach-2b417023</a></h3>
+        <h3 class="mr-4">Twitter: <a href="https://twitter.com/crystal_1344?lang=en">  @crystal_b44</a></h3>
+        <h3 class="mr-4">GitHub: <a href="https://github.com/broach44">  broach44</a></h3>
   </footer>
   <!-- End Footer -->
   </div>
