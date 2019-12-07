@@ -3,12 +3,12 @@ import utilities from '../../helpers/utilities';
 
 
 const createProjectCards = (projectsArr) => {
-  let domString = '<div class="row">';
+  let domString = '<div class="row justify-content-between">';
   for (let i = 0; i < projectsArr.length; i += 1) {
     const currentProject = projectsArr[i];
     if (currentProject.available) {
       domString += `
-        <div class="project-card card card-body col-3">
+        <div class="project-card center card p-2 col-4">
             <h3 class="card-title">${currentProject.title}</h3>
             <img src="${currentProject.screenshot}" class="card-img-top img-fluid">
             <p class="card-text">${currentProject.description}</p>
