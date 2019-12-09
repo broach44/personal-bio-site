@@ -4,26 +4,35 @@
     "screenshot": "./images/celsius-to-fahren1.png",
     "description": "This app converts temperatures in Fahrenheit to Celsius, or will convert temperatures in Celsius to Fahrenheit",
     "technologiesUsed": "HTML, CSS, Bootstrap, Vanilla JavaScript, Version Control with Github",
-    "available": true,
+    "available": false,
     "url": "https://github.com/broach44/js-temp-converter",
     "githubUrl": "https://github.com/broach44/js-temp-converter"
   },
   "project2": {
-  "title": "Temperature Converter",
-  "screenshot": "./images/celsius-to-fahren1.png",
-  "description": "This app converts temperatures in Fahrenheit to Celsius, or will convert temperatures in Celsius to Fahrenheit",
-  "technologiesUsed": "HTML, CSS, Bootstrap, Vanilla JavaScript, Version Control with Github",
+  "title": "Jurassic Park",
+  "screenshot": "./images/homepageUpdate.png",
+  "description": "This app was a group project that provides the user with an application to assist in managing park activities",
+  "technologiesUsed":  "HTML, Sass, Bootstrap, ES6 Modules, jQuery, Cron Job, Firebase Console, Version Control with Github",
   "available": true,
-  "url": "https://github.com/broach44/js-temp-converter",
-  "githubUrl": "https://github.com/broach44/js-temp-converter"
+  "url": "https://jurassic-park-26ffa.firebaseapp.com/",
+  "githubUrl": "https://github.com/nss-evening-cohort-10/nutshell-jurassic-world"
   },
   "project3": {
-  "title": "Temperature Converter",
-  "screenshot": "./images/celsius-to-fahren1.png",
-  "description": "This app converts temperatures in Fahrenheit to Celsius, or will convert temperatures in Celsius to Fahrenheit",
-  "technologiesUsed": "HTML, CSS, Bootstrap, Vanilla JavaScript, Version Control with Github",
+  "title": "Le Baguette",
+  "screenshot": "./images/homeView.png",
+  "description": "This app was a group project that provides the user with an application to assist in managing restaurant operations",
+  "technologiesUsed": "HTML, Sass, Bootstrap, ES6 Modules, jQuery, Firebase Console, Version Control with Github",
   "available": true,
-  "url": "https://github.com/broach44/js-temp-converter",
-  "githubUrl": "https://github.com/broach44/js-temp-converter"
+  "url": "https://labaguette-932fa.firebaseapp.com/#",
+  "githubUrl": "https://github.com/nss-evening-cohort-10/nutshell-michelin-restaurant"
+  },
+  "project4": {
+  "title": "Pinterest",
+  "screenshot": "./images/userHomeView.png",
+  "description": "This app is a similar application as the actual Pinterest",
+  "technologiesUsed": "HTML, Sass, Bootstrap, ES6 Modules, jQuery, Firebase Console, Version Control with Github",
+  "available": true,
+  "url": "https://pinterest-6d44e.firebaseapp.com/",
+  "githubUrl": "https://github.com/broach44/pinterest"
   }
 }
