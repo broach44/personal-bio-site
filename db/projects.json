@@ -1,7 +1,7 @@
 {
   "project1": {
     "title": "Temperature Converter",
-    "screenshot": "./images/celsius-to-fahren1.png",
+    "screenshot": "https://raw.githubusercontent.com/broach44/js-temp-converter/master/screenshots/celsius-to-fahren1.PNG",
     "description": "This app converts temperatures in Fahrenheit to Celsius, or will convert temperatures in Celsius to Fahrenheit",
     "technologiesUsed": "HTML, CSS, Bootstrap, Vanilla JavaScript, Version Control with Github",
     "available": false,
@@ -10,7 +10,7 @@
   },
   "project2": {
   "title": "Jurassic Park",
-  "screenshot": "./images/homepageUpdate.png",
+  "screenshot": "https://raw.githubusercontent.com/nss-evening-cohort-10/nutshell-jurassic-world/master/images/readmeImg/homepageUpdate.png",
   "description": "This app was a group project that provides the user with an application to assist in managing park activities",
   "technologiesUsed":  "HTML, Sass, Bootstrap, ES6 Modules, jQuery, Cron Job, Firebase Console, Version Control with Github",
   "available": true,
@@ -19,7 +19,7 @@
   },
   "project3": {
   "title": "Le Baguette",
-  "screenshot": "./images/homeView.png",
+  "screenshot": "https://raw.githubusercontent.com/nss-evening-cohort-10/nutshell-michelin-restaurant/master/screenshots/homeView.png",
   "description": "This app was a group project that provides the user with an application to assist in managing restaurant operations",
   "technologiesUsed": "HTML, Sass, Bootstrap, ES6 Modules, jQuery, Firebase Console, Version Control with Github",
   "available": true,
@@ -28,8 +28,7 @@
   },
   "project4": {
   "title": "Pinterest",
-  "screenshot": "./images/userHomeView.png",
-  "description": "This app is a similar application as the actual Pinterest",
+  "screenshot": "https://raw.githubusercontent.com/broach44/pinterest/master/screenshots/userHomeView.png",
   "technologiesUsed": "HTML, Sass, Bootstrap, ES6 Modules, jQuery, Firebase Console, Version Control with Github",
   "available": true,
   "url": "https://pinterest-6d44e.firebaseapp.com/",
