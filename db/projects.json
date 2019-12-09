@@ -29,6 +29,7 @@
   "project4": {
   "title": "Pinterest",
   "screenshot": "https://raw.githubusercontent.com/broach44/pinterest/master/screenshots/userHomeView.png",
+  "description": "This app is my personal version of the very popular Pinterest site. Users can sign in and create their own boards and pins",
   "technologiesUsed": "HTML, Sass, Bootstrap, ES6 Modules, jQuery, Firebase Console, Version Control with Github",
   "available": true,
   "url": "https://pinterest-6d44e.firebaseapp.com/",
