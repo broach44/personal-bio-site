@@ -1,41 +1,18 @@
 import projectData from '../../helpers/data/projectData';
 import utilities from '../../helpers/utilities';
 
-
-const createProjectCards = (projectsArr) => {
-  let domString = '<div class="row justify-content-between">';
-  for (let i = 0; i < projectsArr.length; i += 1) {
-    const currentProject = projectsArr[i];
-    if (currentProject.available) {
-      domString += `
-        <div class="project-card center card p-2 col-4">
-            <h3 class="card-title">${currentProject.title}</h3>
-            <img src="${currentProject.screenshot}" class="card-img-top img-fluid">
-            <p class="card-text">${currentProject.description}</p>
-            <p class="card-text">${currentProject.technologiesUsed}</p>
-            <div class="card-body list-group">
-                <a href="${currentProject.url}" class="list-group-item list-group-item-action">Click to View - URL</a> 
-                <a href="${currentProject.githubUrl}" class=" list-group-item list-group-item-action">Click to View - GitHub</a>
-            </div>
-        </div>
-        `;
-    }
-  }
-  domString += '</div>';
-  return domString;
-};
-
-
-const printProjects = () => {
-  projectData.getProjects()
-    .then((projects) => {
-      const projectCards = createProjectCards(projects);
-      utilities.printToDom('projectsPage', projectCards);
-    })
-    .catch((error) => console.error(error));
-};
+import projectCard from '../projectCard/projectCard';
 
 const init = () => {
+  const printProjects = () => {
+    projectData.getProjects()
+      .then((projects) => {
+        const projectCards = projectCard.createProjectCards(projects);
+        utilities.printToDom('projectsPage', projectCards);
+      })
+      .catch((error) => console.error(error));
+  };
+
   const selectTechnologies = document.getElementById('technologiesPage');
   const selectBio = document.getElementById('bioPage');
   const selectProjects = document.getElementById('projectsPage');
@@ -84,13 +61,14 @@ const init = () => {
         bioDisplayed();
       } else if (e.target.id === 'Projects') {
         projectsDisplayed();
-      } else if (e.target.id === 'Home') {
-        if (selectBio.style.display === 'none' || selectTechnologies.style.display === 'none') {
-          selectTechnologies.style.display = 'block';
-          selectBio.style.display = 'block';
-          selectProjects.style.display = 'block';
-        }
       }
+      // } else if (e.target.id === 'Home') {
+      //   if (selectBio.style.display === 'none' || selectTechnologies.style.display === 'none') {
+      //     selectTechnologies.style.display = 'block';
+      //     selectBio.style.display = 'block';
+      //     selectProjects.style.display = 'block';
+      //   }
+      // }
     });
   };
 
@@ -98,4 +76,4 @@ const init = () => {
   addListeners();
 };
 
-export default { init, printProjects };
+export default { init };

@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Crystal Broach - Personal Bio Site</title>
   <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Public+Sans:400,700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/8b3612123f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -18,11 +19,11 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
+          <!-- <li class="nav-item active">
             <button class="nav-link btn btn-info" id="Home" href="#">Home <span class="sr-only">(current)</span></button>
-          </li>
-          <li class="nav-item">
-            <button class="nav-link btn btn-info" id="Bio" href="#">Bio</button>
+          </li> -->
+          <li class="nav-item active">
+            <button class="nav-link btn btn-info" id="Bio" href="#">Bio <span class="sr-only">(current)</span></button>
           </li>
           <li class="nav-item">
             <button class="nav-link btn btn-info" id="Technologies" href="#">Technologies</button>
@@ -35,16 +36,29 @@
     </nav>
   <!-- End Navigation -->
 
+  <div class="icon-bar">
+    <a href="mailto: crysland@gmail.com" class="email"><i class="fas fa-paper-plane fa-2x"></i></a>
+    <a href="https://www.linkedin.com/in/crystal-broach" class="linkedin"><i class="fab fa-linkedin fa-2x"></i></a>
+    <a href="https://github.com/broach44" class="gitHub"><i class="fab fa-github-square fa-2x"></i></a>
+    <a href="https://twitter.com/crystal_1344?lang=en" class="twitter"><i class="fab fa-twitter fa-2x"></i></a>
+  </div>
+
   <!-- Primary View -->
   <div id="page-container" class="container">
-      <div class="fullPage w-85" id="bioPage">
-        <!-- TODO: Fill in bio info here: What is your background? Why do you want to go into development? What do you love about development? -->
+      <div class="fullPage w-95" id="bioPage">
         <h2>Background</h2>
-        <p>I currently have been working within private corrections for CoreCivic (previosuly known as Corrections Corporation of America).  I started as a coordinator in Operations Support department, offering support for the financial business operations and safety operations within the company.  I was promoted to oversee the Occupational Safety for all our Community Branch consisting of around 27 facilities and climbing.</p>
+        <p>
+          In April 2011, I began working at CoreCivic (previously known as Corrections Corporation of America) as a coordinator in Operations Support department.  I offered support for the financial business operations and occupational safety operations within the company.  A few years later, I was promoted to oversee the Occupational Safety for all our Community Branch consisting of around 27 facilities and climbing.  I am responsible for provideing guidance to these facilities in order to ensure their compliance with federal, state and local safety, health and environmental regulations.  I have led multiple leadership projects that furthered the operational goals for integrating community facilities into the current business portfolio and fostering a culture of communication and collaboration.
+        </p>
         <h2>Journey into Development</h2>
-        <p>Why development? What do I love? I absolutely love to learn and software development ensures that I will spend the rest of my life continuing to learn new technologies and provide solutions to new problems.  I love the problem solving required in developing and look forward to solving many more problems in the future!</p>
+        <p>
+          While I was working on finishing up my degree I took some brief certification courses with New Horizons.  I completed their Microsoft Office certification program and the A+ certification program.  Their program also allowed for you to add on an additional certification program.  My program of choice was to learn Miscrosoft's SQL.  I absolutely enjoyed this course but unfortunately due to life circumstances I was unable to continue down this path and gave it up before I was able to complete.
+        </p>
+        <p>
+          I am a person who loves to learn and I truly never want to stop learning new things that I find interesting.  Because of this I decided to start developing.  I felt (and currently still feel) very stale in my current role and was looking for something that would exercise and challenge my mind.  I found this with coding.  I spoke with one of my friends and listened to him talking about his role and projects and it was fascinating.  He recommended Nashville Software School.  He also recommended that I could start trying it out through Udemy and Team Treehouse sites.  I immediately did all of those things and fell head over heels for software development.  I have found my passion and feel I am made to do this.  When coding it does not feel like workbut an enjoyable puzzle to be solved.  There will always be one more puzzle to be solved so I look forward to all of those in the future!
+        </p>
       </div>
-      <div class="fullPage w-85" id="technologiesPage">
+      <div class="fullPage w-95" id="technologiesPage">
         <!-- TODO: Start an UL of all of the tools and technologies you've started learning so far. (You'll beef this page up later). -->
         <ul>
           <li>HTML 5</li>
@@ -52,29 +66,19 @@
           <li>Bootstrap 4</li>
           <li>Javascript</li>
           <li>jQuery</li>
+          <li>React</li>
+          <li>Firebase</li>
+          <li>GitHub</li>
+          <li>Sass</li>
         </ul>
       </div>
-    <div class="fullPage w-85" id="projectsPage"></div>
+    <div class="fullPage w-95" id="projectsPage"></div>
   
   
   <!-- End Primary View -->
 
  
-
-  
-  </div>
-   <!-- Footer -->
-  <footer id="footer" class="sticky-bottom text-center">
-    <!-- TODO: Fill in contact info here: Include things like email, LinkedIn, Twitter and GitHub links. -->
-    <!-- <div id="footer" class="position-sticky border border-success"> -->
-      <!-- <div class="container mx-auto text-center"> -->
-        <h3>Email: <a href="mailto: crysland@gmail.com">crysland@gmail.com</a></h3>
-        <h3>LinkedIn:  <a href="linkedin.com/in/crystal-broach-2b417023">linkedin.com/in/crystal-broach-2b417023</a></h3>
-        <h3 class="mr-4">Twitter: <a href="https://twitter.com/crystal_1344?lang=en">  @crystal_b44</a></h3>
-        <h3 class="mr-4">GitHub: <a href="https://github.com/broach44">  broach44</a></h3>
-  </footer>
-  <!-- End Footer -->
-  </div>
+<!--  -->
   <script src="./main.js"></script>
   <script src="./projects.js"></script>
 </body>
