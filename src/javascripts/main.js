@@ -4,7 +4,6 @@ import '../styles/main.scss';
 
 const init = () => {
   projects.init();
-  projects.printProjects();
 };
 
 init();
