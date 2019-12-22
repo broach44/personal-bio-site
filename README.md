@@ -15,10 +15,6 @@ The home page includes all of the content in one space.  Links are provided in t
 
 ## Screenshots
 
-#### Home View:
-
-![Home View](https://raw.githubusercontent.com/broach44/personal-bio-site/master/screenshots/home-view.PNG)
-
 #### Bio View:
 
 ![Bio View](https://raw.githubusercontent.com/broach44/personal-bio-site/master/screenshots/bio-view.PNG)
