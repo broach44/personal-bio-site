@@ -11,8 +11,8 @@ const createProjectCards = (projectsArr) => {
             <p class="card-text mb-1 pb-1 text-white"><strong>Technologies:</strong>
             <p class="card-text mt-0 pt-0">${currentProject.technologiesUsed}</p>
             <div class="card-footer">
-                <button type="button" class="btn btn-block" href="${currentProject.url}">Click to View - URL</button>
-                <button type="button" class="btn btn-block" href="${currentProject.githubUrl}">Click to View - GitHub</button>
+                <a class="btn btn-block" href="${currentProject.url}">Click to View - URL</a>
+                <a class="btn btn-block" href="${currentProject.githubUrl}">Click to View - GitHub</a>
             </div>
         </div>
         `;

@@ -34,5 +34,14 @@
   "available": true,
   "url": "https://pinterest-6d44e.firebaseapp.com/",
   "githubUrl": "https://github.com/broach44/pinterest"
+  },
+  "project5": {
+  "title": "Tamagotchi",
+  "screenshot": "https://raw.githubusercontent.com/broach44/tamagotchi/master/screenshots/main-view.png",
+  "description": "This app will take you back to the 90s when everyone had to have a tamagotchi.  This app allows the user to attempt to keep a virtual pet alive.  Good luck!",
+  "technologiesUsed": "HTML, Bootstrap, ES6 Modules, jQuery, Firebase Console, Version Control with Github",
+  "available": true,
+  "url": "https://tamagotchi-724e6.firebaseapp.com",
+  "githubUrl": "https://github.com/broach44/tamagotchi"
   }
 }
