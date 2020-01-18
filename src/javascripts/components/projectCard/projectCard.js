@@ -4,7 +4,7 @@ const createProjectCards = (projectsArr) => {
     const currentProject = projectsArr[i];
     if (currentProject.available) {
       domString += `
-        <div class="project-card center card col-3">
+        <div class="project-card center card col-lg-5 col-xl-3">
             <h3 class="card-title">${currentProject.title}</h3>
             <img src="${currentProject.screenshot}" class="card-img-top img-fluid">
             <p class="card-text">${currentProject.description}</p>
