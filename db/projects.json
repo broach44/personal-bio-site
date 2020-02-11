@@ -1,4 +1,13 @@
 {
+  "project01": {
+    "title": "For The Love of Java",
+    "screenshot": "https://raw.githubusercontent.com/broach44/for-the-love-of-java/master/screenshots/homeView.png",
+    "description": "This app allows a user to find a coffee shop that matches their needs best.",
+    "technologiesUsed": "React, Sass, Bootstrap, ReactStrap",
+    "available": true,
+    "url": "https://for-the-love-of-java.firebaseapp.com/",
+    "githubUrl": "https://github.com/broach44/for-the-love-of-java"
+  },
   "project1": {
     "title": "Temperature Converter",
     "screenshot": "https://raw.githubusercontent.com/broach44/js-temp-converter/master/screenshots/celsius-to-fahren1.PNG",
